@@ -1,6 +1,9 @@
 .auth__main {
     align-items: center;
-    background-color: $primary;
+    background-image: url("https://images.hdqwalls.com/download/blur-blue-uu-2560x1440.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -47,7 +50,7 @@
 }
 
 .auth__alert-error {
-    background-color: darkred;
+    background-color: $error-red;
     border-radius: 5px;
     color: white;
     display: flex;

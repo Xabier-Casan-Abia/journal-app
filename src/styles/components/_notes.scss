@@ -2,11 +2,17 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: auto;
 }
 
 .notes__appbar {
     align-items: center;
-    background-color: $primary;
+    background-image: url("https://wallpaperstock.net/blue-textures-and-light-wallpapers_34092_1920x1080.jpg");
+    border-bottom: solid;
+    border-top: solid;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    border-color: $black;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -14,6 +20,10 @@
 }
 
 .notes__content {
+    background-image: url("https://image.freepik.com/free-photo/grey-paper-texture_1253-25.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -33,6 +43,7 @@
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
+    opacity: 0.6;
 }
 
 .notes__textarea {
@@ -40,6 +51,7 @@
     color: $dark-grey;
     font-size: 20px;
     flex: 1 1 auto;
+    opacity: 0.6;
     resize: none;
 }
 

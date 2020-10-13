@@ -1,12 +1,36 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { loginEmailPassword, googlelogin } from '../../actions/auth'
+import { useForm } from '../../hooks/useForm'
 
 const LoginScreen = () => {
+
+    const dispatch = useDispatch();
+
+    const { loading } = useSelector(state => state.ui);
+
+    const [ formValues, handleInputChange ] = useForm({
+        email: '',
+        password: ''
+    })
+
+    const { email, password } = formValues;
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        dispatch(loginEmailPassword(email,password))
+    }
+
+    const handleGoogleLogin = () => {
+        dispatch(googlelogin());
+    }
+    
     return (
         <>
             
             <h3 className="auth__title">Login</h3> 
-            <form>
+            <form onSubmit={ handleLogin }>
 
                 <input
                     autoComplete="off"
@@ -14,6 +38,8 @@ const LoginScreen = () => {
                     type="text"
                     placeholder="Email"
                     name="email"
+                    value={ email }
+                    onChange={ handleInputChange }
                 />
                 
                 <input
@@ -22,18 +48,24 @@ const LoginScreen = () => {
                     type="password"
                     placeholder="Password"
                     name="password"
+                    value={ password }
+                    onChange={ handleInputChange }
                 />
 
                 <button
                     className="btn btn-primary btn-block"
                     type="submit"
+                    disabled={ loading }
                 >
                     Login
                 </button>
 
                 <div className="auth__social-networks">
 
-                    <div className="google-btn">
+                    <div 
+                        className="google-btn"
+                        onClick={ handleGoogleLogin }
+                    >
 
                         <div className="google-icon-wrapper">
 

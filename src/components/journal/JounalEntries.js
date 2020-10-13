@@ -3,7 +3,7 @@ import { JournalEntry } from './JournalEntry'
 
 export const JounalEntries = () => {
 
-    const entries = [ 1, 2, 3, 4, 5, 6]
+    const entries = [ 1, 2, 3, 4, 5]
 
     return (
         <div className="journal__entries">

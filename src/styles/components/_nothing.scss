@@ -1,7 +1,11 @@
 
 .nothing__main-content {
     align-items: center;
-    background-color: $primary;
+    background-image: url("https://wallpaperstock.net/blue-textures-and-light-wallpapers_34092_1920x1080.jpg");
+    // background-image: url("http://www.desktopimages.org/preview/get_photo/309257/1920/1200");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
     color: white;
     display: flex;
     flex-direction: column;
@@ -12,4 +16,3 @@
         text-align: center;
     }
 }
-
