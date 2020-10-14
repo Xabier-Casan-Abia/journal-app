@@ -57,19 +57,23 @@
     border-radius: 4px;
     color: $dark-grey;
     display: flex;
-    margin-bottom: 10px;
-    overflow: hidden;
+    justify-content: space-between;
+    margin-bottom: 10px;    
+    height: 75px;
 }
 
 .journal__entry-picture {
     background-size: cover;
-    background-image: url("https://www.iecisa.com/export/sites/web_iecisa/documents/blogs/20171213-iecisa-imagen-de-marca.jpg");
+    // background-image: url("https://www.iecisa.com/export/sites/web_iecisa/documents/blogs/20171213-iecisa-imagen-de-marca.jpg");
     height: 75px;
     width: 75px;
 }
 
 .journal__entry-body {
+    text-align: justify;
+    width: 180px;
     padding: 10px;
+    overflow: scroll;
 }
 
 .journal__entry-title {
@@ -87,6 +91,8 @@
     flex-direction: column;
     justify-content: center;
     padding: 5px;
+    height: 65px;
+    width: 65px;
 }
 
 .journal__entry-date-box span{

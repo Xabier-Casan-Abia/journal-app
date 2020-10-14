@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { logoutUser } from '../../actions/auth'
+import { newNote } from '../../actions/notes'
 import { JounalEntries } from './JounalEntries'
 
 export const Sidebar = () => {
@@ -13,6 +14,10 @@ export const Sidebar = () => {
         dispatch(logoutUser());
     };
 
+    const handleAddNewEntry = () => {
+        dispatch(newNote())
+    }
+
     return (
         <aside className="journal__sidebar">
 
@@ -20,7 +25,7 @@ export const Sidebar = () => {
 
                 <h3>
 
-                    <i className="far fa-moon"/>
+                    <i className="far fa-user"/>
                     <span> { displayName } </span>
                     
                 </h3>
@@ -34,7 +39,10 @@ export const Sidebar = () => {
 
             </div>
 
-            <div className="journal__new-entry">
+            <div 
+                className="journal__new-entry"
+                onClick={ handleAddNewEntry }
+            >
 
                 <i className="far fa-calendar-plus fa-5x"/>
                 <p className="mt-5">New Entry</p>
