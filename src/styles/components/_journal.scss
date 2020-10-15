@@ -73,7 +73,6 @@
 .journal__entry-body {
     justify-self: stretch !important;
     text-align: justify;
-    max-width: 186px;
     width: -webkit-fill-available;
     padding: 5px;
     overflow: scroll;
@@ -95,7 +94,7 @@
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
-    padding-right: 5px;
+    padding: 0 10px 0 5px;
 }
 
 .journal__entry-date-box span {
