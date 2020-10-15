@@ -30,20 +30,20 @@ export const JournalEntry = ({ id, date, title, body, url }) => {
                     }}
                 ></div>
             }
-            
-            <div className="journal__entry-body">
-                <p className="journal__entry-title">
-                    { title }
-                </p>
-                <p className="journal__entry-content">
-                    { body }
-                </p>
-            </div>
 
-            <div className="journal__entry-date-box">
-                <span>{ newDate.format('ddd') }</span>
-                <h4>{ newDate.format('Do') }</h4>
-            </div>
+                <div className="journal__entry-body">
+                    <p className="journal__entry-title">
+                        { title }
+                    </p>
+                    <p className="journal__entry-content">
+                        { body }
+                    </p>
+                </div>
+
+                <div className="journal__entry-date-box">
+                    <span>{ newDate.format('ddd') }</span>
+                    <h4>{ newDate.format('Do') }</h4>
+                </div>
 
         </div>
     )
