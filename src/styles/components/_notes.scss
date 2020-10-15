@@ -49,14 +49,17 @@
 .notes__textarea {
     border: none;
     color: $dark-grey;
-    font-size: 20px;
+    font-size: 16px;
     flex: 1 1 auto;
     opacity: 0.6;
+    margin-bottom: 10px;
     resize: none;
     text-align: justify;
+    max-width: 100%;
 }
 
 .notes__image img {
     box-shadow: 5px 5px $dark-grey;
-    height: 150px;
+    max-height: 155px;
+    max-width: 100%;
 }

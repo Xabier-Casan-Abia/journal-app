@@ -23,12 +23,12 @@ export const Sidebar = () => {
 
             <div className="journal__sidebar-navbar">
 
-                <h3>
+                <h5>
 
                     <i className="far fa-user"/>
                     <span> { displayName } </span>
                     
-                </h3>
+                </h5>
 
                 <button 
                     className="btn"

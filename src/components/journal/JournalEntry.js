@@ -41,7 +41,7 @@ export const JournalEntry = ({ id, date, title, body, url }) => {
             </div>
 
             <div className="journal__entry-date-box">
-                <span>{ newDate.format('dddd') }</span>
+                <span>{ newDate.format('ddd') }</span>
                 <h4>{ newDate.format('Do') }</h4>
             </div>
 
